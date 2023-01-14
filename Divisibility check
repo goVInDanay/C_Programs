@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    
+    int n,d1,d2;
+    scanf("%d%d%d",&n,&d1,&d2);
+    if(n%d1==0 && n%d2==0)
+    {
+        printf("Yes.");
+    }
+    else
+    {
+        printf("No.");
+    }
+
+}
