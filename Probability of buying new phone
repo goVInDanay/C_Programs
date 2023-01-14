@@ -1,0 +1,30 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int P1,P2,P3,A,check=0;
+    scanf("%d\n",&P1);
+    scanf("%d\n",&P2);
+    scanf("%d\n",&P3);
+    scanf("%d\n",&A);
+    int arr[3]={P1,P2,P3};
+    for(int i=0;i<3;i++)
+    {
+        if(arr[i]<=A)
+        {
+            check++;
+        }
+    }
+  for(int j=0;j<3;j++)
+  {
+       if(arr[j]<=A)
+        printf("%0.3f\n",(1.0f/check));
+       else
+               printf("0.000\n");
+  }
+}
