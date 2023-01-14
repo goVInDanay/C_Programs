@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    char ch;
+    scanf("%c",&ch);
+    if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+    {
+        if((ch=='a')||(ch=='A')||(ch=='e')||(ch=='E')||(ch=='i')||(ch=='I')||(ch=='O')||(ch=='o')||(ch=='u')||(ch=='U'))
+        {
+            printf("Vowel.");
+        }
+        else
+        {
+            printf("Consonant.");
+        }
+    }
+    else
+    {
+        printf("Not an alphabet.");
+    }
+}
