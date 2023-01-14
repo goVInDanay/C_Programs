@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    float c,s;
+    float percent;
+    scanf("%f\n",&c);
+    scanf("%f\n",&s);
+    if(c>s)
+    {
+        percent=((c-s)*100.0f)/c;
+        printf("Loss\n");
+        printf("%3.2f%%",percent);
+    }
+    else
+    {
+        percent=((s-c)*100)/c;
+        printf("Profit\n");
+        printf("%3.2f%%",percent);
+    }
+    return 0;
+        
+}
