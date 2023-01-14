@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int T;
+    scanf("%d\n",&T);
+    for(int i=0;i<T;i++)
+    {
+        float A,B,C,check;
+        scanf("%f %f %f\n",&A,&B,&C);
+        check=A+B+C;
+        if(check==180.0f)
+            printf("YES\n");
+        else
+            printf("NO\n");
+    }
+}
