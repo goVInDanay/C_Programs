@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N,B,G,I,D,temp1,temp2;
+    scanf("%d %d %d %d %d",&N,&B,&G,&I,&D);
+    temp1=B*I;
+    temp2=G*D;
+    if(temp1<temp2)
+        printf("Funny Questions");
+    else if(temp1>temp2)
+        printf("Simple Questions");
+    else
+        printf("God Knows!");
+    return 0;
+}
