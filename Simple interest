@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int P,T,R,SI,A;
+    scanf("%d",&P);
+    scanf("%d",&R);
+    scanf("%d",&T);
+    SI=(P*R*T)/100;
+    A=SI+P;
+    printf("%d",A);
+}
