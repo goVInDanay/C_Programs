@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N,S,C,H,L,T,temp1,temp2,temp3;
+    scanf("%d %d %d %d %d %d",&N,&S,&C,&H,&L,&T);
+    temp1=S*C*H;
+    if(N>L)
+    {
+        temp2=(N-L)*24;
+        temp3=temp1/T;
+        if(temp2>temp3)
+            printf("Goa Jaayenge");
+        else
+            printf("Padhai Karenge");
+    }
+    else
+    {
+        printf("Padhai Karenge");
+    }
+    return 0;
+}
