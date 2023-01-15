@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long int a,b;
+    scanf("%ld %ld\n",&a,&b);
+    int chk=0,hcf=1;
+    if(a>b)
+        chk=b;
+    else 
+        chk=a;
+    if((a>=1&&b>=1)&&(a<=100000000&&b<=100000000))
+    {
+    for(int i=1;i<=chk;i++)
+    {
+        if((a%i==0)&&(b%i==0))
+        {
+            hcf=i;
+        }
+    }
+    }
+    printf("%d",hcf);
+}
