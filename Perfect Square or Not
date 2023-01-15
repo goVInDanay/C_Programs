@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    long int n,m,chk=0;
+    int d,T;
+    scanf("%d",&T);
+    for(int i=0;i<T;i++)
+    {
+        scanf("\n%ld\n",&n);
+        m=n;
+        if(n>0&&n<1000000000000)
+        {
+            d=n%10;
+            if(d==2||d==3||d==7||n==8)
+                printf("Not a Perfect Square\n");
+            else
+            {
+                chk=sqrt(m);
+                if(chk*chk==m)
+                    printf("Perfect Square\n");
+                else
+                    printf("Not a Perfect Square\n");
+            }
+                
+        }
+    }
+}
