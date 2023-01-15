@@ -1,0 +1,47 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    long int n,q;
+    int x;
+    char c;
+    scanf("%ld %ld",&n,&q);
+    if((n>0&&n<1000000000)&&(q>0&&q<1000000000))
+    for(int i=0;i<q;i++)
+    {
+        scanf("\n%c %d\n",&c,&x);
+        switch(c)
+        {
+            case '+':
+                n=n+x;
+                break;
+            case'-':
+                n=n-x;
+                break;
+            case '/':
+                n=n/x;
+                break;
+            case '^':
+                n=n^x;
+                break;
+            case '&':
+                n=n&x;
+                break;
+            case '%':
+               n=n%x;
+                break;
+            case '*':
+                n=n*x;
+                break;
+            case '|':
+                n=n|x;
+                break;
+        }
+    }
+    printf("%ld",n);
+}
