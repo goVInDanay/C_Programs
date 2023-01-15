@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,m,l,d,sum=0;
+    scanf("%d",&n);
+    m=n;
+    l=log10(n)+1;
+    if(n>=1)
+    {
+    while(n!=0)
+    {
+        d=n%10;
+        sum+=pow(d,l);
+        n=n/10;
+    }
+    }
+    if(sum==m)
+        printf("Armstrong Number.");
+    else
+        printf("Not Armstrong.");
+}
