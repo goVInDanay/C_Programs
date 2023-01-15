@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int T,N,d;
+    scanf("%d",&T);
+    for(int i=1;i<=T;i++)
+    {
+        int sum=0;
+        scanf("\n%d\n",&N);
+        for(int i=1;i<=N;i++)
+        {
+            while(N!=0)
+            {
+                d=N%10;
+                sum=sum+d;
+                N=N/10;
+            }  
+            
+        }
+        printf("%d\n",sum);
+    }
+}
