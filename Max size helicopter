@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int t;
+    scanf("%d\n",&t);
+    for(int i=0;i<t;i++)
+    {
+        int n;
+        scanf("%d\n",&n);
+        int b[n],c[n],d;
+        float max=0;
+        float r,area,a[n];
+        for(int j=0;j<n;j++)
+        {
+            scanf("%d %d",&b[j],&c[j]);
+            d=b[j]<c[j]?b[j]:c[j];
+            r=d/2.0f;
+            area=3.14*r*r;
+            a[j]=area;
+        }
+        for(int j=0;j<n;j++)
+        {
+            if(max<a[j])
+                max=a[j];
+        }
+        for(int j=0;j<n;j++)
+        {
+            if(max==a[j])
+                printf("%d %d\n",b[j],c[j]);
+        }
+    }
+}
