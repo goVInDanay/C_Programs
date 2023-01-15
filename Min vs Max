@@ -1,0 +1,28 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int T,N,min=100000,max=0;
+    int a;
+    scanf("%d",&T);
+    for(int i=1;i<=T;i++)
+    {
+        scanf("\n%d\n",&N);
+        for(int i=1;i<=N;i++)
+        {
+            scanf("%d ",&a);
+            if(min>=a)
+                min=a;
+            if(max<=a)
+                max=a;
+        }
+        printf("Min=%d Max=%d\n",min,max);
+    }
+    
+    
+}
