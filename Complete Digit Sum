@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,d,sum=0,sum2=0;
+    scanf("%d\n",&n);
+    while(n!=0)
+    {
+        d=n%10;
+        sum+=d;
+        n=n/10;
+    }
+    if(sum/10!=0)
+    {
+        while(sum!=0)
+        {
+            d=sum%10;
+            sum2+=d;
+            sum=sum/10;
+        }
+        printf("%d",sum2);
+    }
+    else
+    printf("%d",sum);
+}
