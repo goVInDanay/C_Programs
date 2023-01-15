@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i,chk=1;
+    float sum=0;
+    scanf("%d",&n);
+    if(n>=0&&n<=10000)
+    {
+        float t1=0,t2=0;
+        for(i=1;i<=n;i++)
+        {
+            t1=(double)pow(chk,2);
+            t2=(double)pow(chk,3);
+           sum=sum+(double)t1/t2;
+            chk=chk+2;
+        }
+        printf("%lf",sum);
+    }
+}
