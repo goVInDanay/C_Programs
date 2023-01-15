@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n;
+    scanf("%d\n",&n);
+    int a[n],val,pos=0,f=0;
+    for(int i=0;i<n;i++)
+        scanf("%d ",&a[i]);
+    scanf("%d\n",&val);
+    for(int i=0;i<n;i++)
+        if(a[i]==val)
+        {
+            pos=i;
+            f=1;
+        }
+    if(f==1)
+    {
+    for(int i=pos;i<n;i++)
+        a[i]=a[i+1];
+    for(int i=0;i<n-1;i++)
+        printf("%d ",a[i]);
+    }
+    else
+        printf("Not found.");
+}
